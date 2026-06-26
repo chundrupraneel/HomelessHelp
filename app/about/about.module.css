@@ -1,0 +1,85 @@
+.hero {
+  padding: clamp(56px, 9vw, 88px) 0 56px;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.storyGrid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.storyCopy {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sectionHead {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 48px;
+  max-width: 680px;
+}
+
+.values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.valueCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.valueIcon {
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+  background: rgba(199, 91, 57, 0.12);
+  color: var(--rust-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statusCard {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: rgba(217, 164, 65, 0.14);
+  border: 1px solid rgba(217, 164, 65, 0.4);
+}
+
+.statusIcon {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--gold);
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .heroGrid,
+  .storyGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .values {
+    grid-template-columns: 1fr;
+  }
+}

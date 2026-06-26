@@ -1,0 +1,76 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.amountGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.amountBtn {
+  padding: 14px 8px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--line);
+  background: var(--paper);
+  font-weight: 700;
+  font-size: 1.02rem;
+  cursor: pointer;
+  transition: border-color 0.2s var(--ease-out), transform 0.2s var(--ease-out), background 0.2s var(--ease-out);
+  color: var(--ink);
+}
+
+.amountBtn:hover {
+  border-color: var(--rust);
+  transform: translateY(-1px);
+}
+
+.amountBtnActive {
+  border-color: var(--rust);
+  background: rgba(199, 91, 57, 0.1);
+  color: var(--rust-deep);
+}
+
+.customRow {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.customPrefix {
+  position: absolute;
+  left: 16px;
+  font-weight: 700;
+  color: var(--ink-faint);
+  pointer-events: none;
+}
+
+.customInput {
+  width: 100%;
+  padding: 14px 16px 14px 30px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--line);
+  font-family: var(--font-body), sans-serif;
+  font-size: 1.02rem;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.customInput:focus {
+  outline: none;
+  border-color: var(--rust);
+}
+
+.error {
+  font-size: 0.88rem;
+  color: var(--rust-deep);
+  font-weight: 600;
+}
+
+.helper {
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  text-align: center;
+}

@@ -1,0 +1,76 @@
+.hero {
+  padding: clamp(56px, 9vw, 88px) 0 56px;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.reasonGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.reasonCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reasonIcon {
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+  background: rgba(199, 91, 57, 0.12);
+  color: var(--rust-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.contactCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.contactIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(62, 86, 65, 0.12);
+  color: var(--forest-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactValue {
+  font-family: var(--font-display), serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-bottom: 1.5px dashed var(--ink-faint);
+  padding-bottom: 2px;
+}
+
+@media (max-width: 900px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .reasonGrid,
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+}

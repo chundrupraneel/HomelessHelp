@@ -1,0 +1,27 @@
+.statusWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+  max-width: 540px;
+  padding: 40px 0;
+}
+
+.statusIcon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--cream-deep);
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statusIconGood {
+  background: var(--rust);
+  color: var(--paper);
+  border: none;
+}

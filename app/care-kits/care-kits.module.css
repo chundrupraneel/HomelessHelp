@@ -1,0 +1,164 @@
+.hero {
+  padding: clamp(56px, 9vw, 88px) 0 56px;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.sectionHead {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 48px;
+  max-width: 680px;
+}
+
+.checklist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.checklistItem {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.checklistIcon {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(62, 86, 65, 0.12);
+  color: var(--forest-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checklistItem h3 {
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.checklistItem p {
+  font-size: 0.92rem;
+}
+
+.note {
+  margin-top: 36px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.noteIcon {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  background: rgba(217, 164, 65, 0.2);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.processSteps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.stepCard {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.stepIcon {
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+  background: var(--rust);
+  color: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wishlistGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.wishlistCard {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.wishlistList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.wishlistRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  font-size: 0.96rem;
+}
+
+.wishlistRow svg {
+  color: var(--forest-deep);
+  flex-shrink: 0;
+}
+
+.partnerGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.partnerCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  padding: 28px 18px;
+}
+
+.partnerIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(199, 91, 57, 0.1);
+  color: var(--rust-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .heroGrid,
+  .wishlistGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .checklist,
+  .processSteps,
+  .partnerGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,36 @@
+.placeholder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  border: 1.5px dashed var(--line);
+  border-radius: var(--radius-md);
+  background:
+    repeating-linear-gradient(
+      135deg,
+      rgba(42, 33, 24, 0.035) 0px,
+      rgba(42, 33, 24, 0.035) 1px,
+      transparent 1px,
+      transparent 14px
+    ),
+    var(--paper);
+  color: var(--ink-faint);
+  padding: 32px;
+  min-height: 220px;
+  width: 100%;
+}
+
+.icon {
+  color: var(--rust-deep);
+  opacity: 0.7;
+}
+
+.label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  max-width: 220px;
+}

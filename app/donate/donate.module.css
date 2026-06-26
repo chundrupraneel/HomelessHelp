@@ -1,0 +1,93 @@
+.hero {
+  padding: clamp(48px, 8vw, 76px) 0 40px;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.disclosure {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-top: 26px;
+  padding: 18px;
+  background: rgba(217, 164, 65, 0.14);
+  border: 1px solid rgba(217, 164, 65, 0.4);
+  border-radius: var(--radius-sm);
+}
+
+.disclosureIcon {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--gold);
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.disclosure p {
+  font-size: 0.88rem;
+}
+
+.cardPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.manualGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.manualCard {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.manualIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(62, 86, 65, 0.12);
+  color: var(--forest-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.handle {
+  display: inline-flex;
+  align-self: flex-start;
+  font-weight: 700;
+  font-family: var(--font-display), serif;
+  font-size: 1.15rem;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1.5px dashed var(--ink-faint);
+  background: var(--cream);
+  color: var(--ink-soft);
+}
+
+.itemsCard {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+@media (max-width: 900px) {
+  .heroGrid,
+  .manualGrid {
+    grid-template-columns: 1fr;
+  }
+}
