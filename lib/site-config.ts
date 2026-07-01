@@ -8,6 +8,6 @@ export const siteConfig = {
   email: "eshachundru@gmail.com",
   phone: "412-738-4833",
   venmo: "@your-venmo-handle",
-  zelle: "your-zelle-email-or-phone",
+  zelle: "860-724-6801",
   isRegisteredNonprofit: false,
 };
