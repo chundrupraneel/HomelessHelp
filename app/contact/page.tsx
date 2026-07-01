@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Icon } from "@/components/Icon";
-import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
 import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
 import { siteConfig } from "@/lib/site-config";
 import styles from "./contact.module.css";
@@ -48,9 +47,6 @@ export default function ContactPage() {
               </p>
             </Reveal>
           </div>
-          <Reveal delay={0.1}>
-            <PhotoPlaceholder label="Add a team or volunteer photo here" />
-          </Reveal>
         </div>
       </section>
 

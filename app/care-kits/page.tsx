@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Icon } from "@/components/Icon";
-import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
 import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
 import { siteConfig } from "@/lib/site-config";
 import styles from "./care-kits.module.css";
@@ -91,9 +90,6 @@ export default function CareKitsPage() {
               </p>
             </Reveal>
           </div>
-          <Reveal delay={0.1}>
-            <PhotoPlaceholder label="Add a photo of an assembled care kit here" />
-          </Reveal>
         </div>
       </section>
 
@@ -175,9 +171,6 @@ export default function CareKitsPage() {
             </Link>
           </Reveal>
 
-          <Reveal delay={0.1}>
-            <PhotoPlaceholder label="Add a photo of donated items or a drop-off box here" />
-          </Reveal>
         </div>
       </section>
 

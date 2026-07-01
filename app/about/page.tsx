@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Icon } from "@/components/Icon";
-import { PhotoPlaceholder } from "@/components/PhotoPlaceholder";
 import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
 import { siteConfig } from "@/lib/site-config";
 import styles from "./about.module.css";
@@ -49,17 +48,11 @@ export default function AboutPage() {
               </p>
             </Reveal>
           </div>
-          <Reveal delay={0.1}>
-            <PhotoPlaceholder label="Add a photo of the founder or a kit-packing session here" />
-          </Reveal>
         </div>
       </section>
 
       <section className="section section--alt">
         <div className={`container ${styles.storyGrid}`}>
-          <Reveal>
-            <PhotoPlaceholder label="Add a founding story photo here" />
-          </Reveal>
           <Reveal delay={0.1} className={styles.storyCopy}>
             <span className="tag">The founding story</span>
             <h2>Built from noticing a gap, not a grand plan.</h2>
