@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "@/components/Icon";
 import { DonateForm } from "@/components/DonateForm";
@@ -63,8 +64,14 @@ export default function DonatePage() {
                 <Icon name="phone" size={20} />
               </span>
               <h3>Venmo</h3>
-              <p>Send your donation directly via Venmo:</p>
-              <span className={styles.handle}>{siteConfig.venmo}</span>
+              <p>Scan to donate via Venmo:</p>
+              <Image
+                src="/venmo-qr.jpg"
+                alt="Venmo QR code"
+                width={180}
+                height={180}
+                className={styles.qrCode}
+              />
               <p style={{ fontSize: "0.85rem" }}>
                 Please include your email in the note so we can say thanks.
               </p>

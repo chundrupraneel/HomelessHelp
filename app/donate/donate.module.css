@@ -78,6 +78,11 @@
   color: var(--ink-soft);
 }
 
+.qrCode {
+  border-radius: 10px;
+  object-fit: contain;
+}
+
 .itemsCard {
   display: flex;
   flex-direction: column;
